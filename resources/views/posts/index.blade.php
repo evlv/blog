@@ -5,6 +5,8 @@
 
             <x-posts-grid :posts="$posts" />
 
+            {{ $posts->links() }}
+
         </main>
 
 </x-layout>
