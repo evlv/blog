@@ -55,6 +55,6 @@ class RegisterController extends Controller
 // End ways to save user object
 // Fourth way would be trhough Eloquent mutator. => in the User model
         User::create($attributes); // The password is set(mutated in the User model 'SetPasswordAttribute' mutator function)
-        return redirect('/');
+        return redirect('/')->with('success', 'Your account has been created.');
     }
 }
